@@ -1,0 +1,339 @@
+.open-button {
+	background-color:#555;
+	color: black;
+	border:none;
+
+}
+
+
+.form-popup {
+	display: none;
+	position: center;
+	bottom: 0;
+	position: relative;
+	margin-right: 20%;
+	margin-left: 20%;
+	margin-top: 20px;
+	border:3px solid white;
+	z-index: 9;
+
+}
+/* style to the form container*/
+.form-container {
+	margin-right: 0%;
+	margin-left: 0%;
+	margin-top: 20px;
+	marker-bottom:0%; 
+	 max-width: auto;
+	 position: fixed;
+	 padding: 10px;
+/*	 background-image: url("/Marcado/Resources/Images/Card.PNG");*/
+/* background-image: url("/Marcado/Resources/Images/ip.PNG");*/
+	background-position: bottom;
+    background-repeat: no-repeat;
+	 background-size: 100%;
+	 background-position: center;
+	 background-color: white;
+
+}
+.form-container input[type=text], .form-container input[type=password] {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border:none;
+	background:#150545;
+
+}
+.form-container .btn {
+	background-color: black;
+	color: gray;
+	padding: 16px 20px;
+	border:none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom:10px;
+	opacity: 0.8;
+
+}
+
+.form-container .cancel {
+	background-color: red;
+}
+
+.form-container .btn:hover , .open-button:hover {
+	opacity: 1;
+
+}
+.h-btn:hover {
+	background-color: red;
+
+}
+
+/*Local style*/
+ .dropdown img{
+    margin-top: -10;
+    margin-bottom: -10;
+  }
+ .item  img {
+  border-radius: 10px;
+    
+  }
+  .carousel-inner p{
+    color: #fff;
+  }
+  .main img{
+     border-radius: 15px;
+     height: 150px;
+     width: 200px;
+  }
+  .main img:hover{
+     border: 2px solid white;
+
+          -ms-transform: scale(1.4);
+          -moz-transform: scale(1.4);
+          -webkit-transform: scale(1.4);
+          -o-transform: scale(1.4);
+          transform: scale(1.4); 
+  }
+  .margin-b-20 img{
+    border-radius: 20px;
+    height: 200px;
+    width: 100%;
+  }
+
+  .boxs:hover{
+    background-color: orange;
+  }
+   .boxs .button{
+    border-radius: 5px;
+    padding-left: 40%;
+    padding-right: 45%;
+
+  }
+  .boxs .button:hover{
+    background-color: black;
+  }
+  .productinfo img{
+    height: 200px;
+  }
+/*Local style Ends*/
+/*cars sell*/
+.container1
+{
+	padding: 10px;
+	width: 50%;
+	display: flex;
+	flex: wrap wrap;
+	justify-content: space-between;
+}
+.box
+{
+	border-radius: 10px;
+
+	
+	position: relative;
+	width: 100%;
+	height: 350px;
+	background: #000;
+	box-shadow: 0 30px 30px  rgba(0,0,0,.5)
+}
+.box .imgBx
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	padding-top: 10px;
+	
+
+}
+.box .imgBx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: 0.5s;
+	width: 100%;
+	border-radius: 10px;
+	
+
+}
+.box:hover .imgBx img
+{
+	opacity: 0;
+
+}
+.box .content
+{
+	position: absolute;
+	bottom: 20px;
+	left: 10%;
+	width: 80%;
+	height: 60px;
+	background: #fff;
+	transition: 0.5s;
+	overflow: hidden;
+
+	padding: 10px;
+	box-sizing: border-box;
+
+}
+.box:hover .content
+{
+	width: 100%;
+	height: 100%;
+	bottom:0;
+	left: 0;
+
+
+}
+.box .content h2
+{
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	font-variant: normal;
+	
+	font-weight:bold;
+	font-family: cursive;
+
+}
+.box .content p
+{
+	margin: 10px 0 0;
+	padding: 0;
+	opacity: 0;
+	line-height: 2.0em;
+	transition:0.5s;
+	text-align: justify;
+	font-size: 15px;
+	font-weight: bold;
+	
+}
+.box:hover .content p
+{
+	opacity: 1;
+	transition-delay: 0.5s
+	
+}
+/*fotter*/
+
+
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: silver;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #007b5e !important;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+
+.carousel-inner .item-active img {
+        border-radius: 10px;
+        padding-top: 100px;
+      }
+  
+
+.owl-buttons {
+  display: none;
+}
+.owl-carousel:hover .owl-buttons {
+  display: block;
+}
+
+.owl-item {
+  text-align: center;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+  background: transparent;
+  color: #869791;
+  font-size: 40px;
+  line-height: 300px;
+  margin: 0;
+  padding: 0 60px;
+  position: absolute;
+  top: 0;
+}
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+  left: 0;
+  padding-left: 20px;
+}
+.owl-theme .owl-controls .owl-buttons .owl-next {
+  right: 0;
+  padding-right: 20px;
+}
+
+
+/*end fotter*/

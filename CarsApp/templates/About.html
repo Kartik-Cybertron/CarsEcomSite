@@ -1,0 +1,507 @@
+<html>
+<head>
+    <title>About</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css\Mi-slider.css">
+<link rel="stylesheet" type="text/css" href="css\price-range.css">
+<link rel="stylesheet" type="text/css" href="css\products des.css">
+<link rel="stylesheet" type="text/css" href="css\Mainstyle.css">
+<link rel="stylesheet" type="text/css" href="css\Hover.css">
+<style type="text/css">
+
+</style>
+</head>
+<body style="background-color: #101010">
+
+    <!--Header End-->
+     <nav class="navbar navbar-inverse container-fluid navbar-fixed-top" style="background-color: #500002">
+        <div style="    padding-top: 16px;">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" >
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://modernpathshala.com" style="padding-top: -20 ; padding-left: -20"><img src="logos\MAIN LOGO.png" style=" margin-left: -25px; margin-top: -25px;width: 120px ; 
+                height:55px;"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="content-padding:50% border-color: #101010;
+    background-color:#500002;">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="Home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                    <li><a href="About.html"> <span class="glyphicon glyphicon-king"></span>  About</a></li>
+
+                </ul>
+                <form class="navbar-form navbar-left" role="">
+                    <div class="form-group-sm">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-btn">
+                                <button class="btn btn-success btn-sm" style="background-color: black">Go!</button>
+                            </span>
+                        </div>
+                    </div>
+
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                   <li><a class="open-Button" onclick="openForm()" role="button"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a class="open-Button1" onclick="openForm1()" role="button" href="#"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+
+<div class="form-popup" id="myform" >
+          <form action="/action_page.php" class="form-container" style="left: 20%; right: 20%;">
+            <img src="logos\MAIN LOGO.png" style="height: 70px; width: 70px;">
+            <h1 style="color: black; justify-content: center;">Login</h1>
+            
+            <label for="email" style="color: black"><b>Email</b></label>
+            <input type="text" name="email" placeholder="Enter Email" required>
+            <label for="psw"style="color: black"><b>Passwrd</b></label>
+            <input type="password" name="psw" placeholder="Enter Password" required>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <button type="submit" class="btn" style="background-color: black;"><b>Login</b></button>
+              </div>
+              <div class="col-12-6 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <button type="button" class="btn cancel" onclick="closeForm();"><b>Close</b></button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+<div class="form-popup" id="myform1" >
+          <form action="/action_page.php" class="form-container" style="left: 20%; right: 20%;">
+            <img src="logos\MAIN LOGO.png" style="height: 70px; width: 70px;">
+            <h1 style="color: black; justify-content: center;">Register</h1>
+            
+            <label for="email" style="color: black"><b>Email or Mob.no</b></label>
+            <input type="text" name="email" placeholder="Enter Email" required>
+            <label for="psw"style="color: black"><b>Passwrd</b></label>
+            <input type="password" name="psw" placeholder="Enter Password" required>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <button type="submit" class="btn" style="background-color: black;"><b>GetIn</b></button>
+              </div>
+              <div class="col-12-6 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <button type="button" class="btn cancel" onclick="closeForm1();"><b>Close</b></button>
+              </div>
+            </div>
+          </form>
+        </div>
+    <!--     <div class="form-popup" id="myform3" >
+          <form action="/action_page.php" class="form-container" style="left: 20%; right: 20%;">
+            <img src="H:\Marcado\Images\MAIN LOGO.png">
+            <h1 style="color: black; justify-content: center;">Login</h1>
+            
+            <label for="email" style="color: black"><b>Email</b></label>
+            <input type="text" name="email" placeholder="Enter Email" required>
+            <label for="psw"style="color: black"><b>Passwrd</b></label>
+            <input type="password" name="psw" placeholder="Enter Password" required>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <button type="submit" class="btn" style="background-color: black;"><b>Login</b></button>
+              </div>
+              <div class="col-12-6 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <button type="button" class="btn cancel" onclick="closeForm2();"><b>Close</b></button>
+              </div>
+            </div>
+          </form>
+        </div> -->
+
+
+<section id="slider"><!--slider-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" style="
+    margin-top: 10px;margin-top: 10px;padding-left: 0px;padding-right: 0px;">
+          <div id="slider-carousel" class="carousel slide" data-ride="carousel" style="">
+            <ol class="carousel-indicators">
+              <li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#slider-carousel" data-slide-to="1"></li>
+              <li data-target="#slider-carousel" data-slide-to="2"></li>
+            </ol>
+            
+            <div class="carousel-inner" style=" width: 100%; padding-left: 10px;margin-top: -80px; ">
+              <div class="item active" style="width: 100%; padding-left:0px">
+                <div class="col-sm-6">
+                  <h1><span>Dodge </span>Challenger SRT</h1>
+                  
+                  <p>Price : $ 71350 onwards<br>Engine : 440 cu in (7.2 L) RB V8<br>Transmission : Automatic<br>FuelType : Petrol<br>Seating Capacity : 4   </p>
+                  <button type="button" class="btn btn-default get">Get it now</button>
+                </div>
+                <div class="col-sm-6">
+                  <img src="cars\890217.jpg" style=" height: 350px; width: 100%;margin-top:50px ;padding-top: 20px " alt="" />
+                  <img src=""  class="pricing" alt="" />
+                </div>
+              </div>
+              <div class="item" style="width: 100%; padding-left:0px">
+                <div class="col-sm-6">
+                  <h1><span>Aston Martin </span>DBS</h1>
+                  
+                  <p>Price : $ 705582 onwards<br>Engine : 5.9 L AM11 V12<br>Transmission : Automatic<br>FuelType : Petrol<br>Seating Capacity : 4   </p>
+                  <button type="button" class="btn btn-default get">Get it now</button>
+                </div>
+                <div class="col-sm-6" >
+                  <img src="cars\881015.jpg" style=" height: 350px; width: 100%;margin-top:50px ;padding-top: 20px" alt="" />
+                  <img src=""  class="pricing" alt="" />
+                </div>
+              </div>
+              
+              <div class="item" style="width: 100% ;padding-left:0px">
+                <div class="col-sm-6">
+                  <h1><span>Pagani </span>Huayra BC Roadster</h1>
+                  
+                 <p>Price : $ 4000000 onwards<br>Engine : 6.0 L (366.1 cu in) twin-turbocharged Mercedes-AMG M158 V12<br>Transmission : Automatic<br>FuelType : Petrol<br>Seating Capacity : 2   </p>
+                  <button type="button" class="btn btn-default get">Get it now</button>
+                </div>
+                <div class="col-sm-6">
+                  <img src="cars\925201.jpg" style=" height: 350px; width: 100%;margin-top:50px ;padding-top: 20px" alt="" />
+                  <img src="" class="pricing" alt="" />
+                </div>
+              </div>
+              
+            </div>
+            
+            <a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
+              <i class="fa fa-angle-left"></i>
+            </a>
+            <a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
+              <i class="fa fa-angle-right"></i>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section><!--/slider-->
+<!-- COLLAPSIBLE NAVBAR -->
+
+  <nav class="navbar navbar-inverse container-fluid navbar" style="background-color: #000">
+        <div style="    padding-top: 16px;">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" >
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3" style="content-padding:50% border-color: #000;
+    background-color:#000;">
+                <ul class="nav navbar-nav">
+
+<li class="dropdown" style="text-align: center;padding-bottom: 10px">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">All Parts<span class="caret"></span></a>
+<ul class="dropdown-menu" >
+<li style="text-align: center;"><a href="">Battery</a></li>
+<li style="text-align: center;"><a href="">Axle</a></li>
+<li style="text-align: center;"><a href="">Brakes</a></li>
+<li style="text-align: center;"><a href="">Radiator</a></li>
+<li style="text-align: center;"><a href="">AC Compressor</a></li>
+<li style="text-align: center;"><a href="">Muffler</a></li>
+<li style="text-align: center;"><a href="">Transmission</a></li>
+<li style="text-align: center;"><a href="">Shock Absorbers</a></li>
+</ul>
+</li>
+
+<li class="dropdown" style="text-align: center;padding-bottom: 2px">
+  <a href="Jaguar.html">
+<img src="logos\JAGUARLOGO.png" style="width: 100px;height: 50px; padding-left: 20px;padding-right: 20px;"></a>
+</li>
+<li class="dropdown" style="text-align: center;padding-bottom: 2px">
+  <a href="Audi.html">
+<img src="logos\Audilog.jpg" style="width: 100px;height: 50px; padding-left: 20px;padding-right: 20px;"></a>
+</li>
+<li class="dropdown" style="text-align: center;padding-bottom: 2px">
+  <a href="Bentley.html">
+<img src="logos\BENTLEYLOGO.jpg" style="width: 100px;height: 50px; padding-left: 20px;padding-right: 20px;"></a>
+</li>
+<li class="dropdown" style="text-align: center;padding-bottom: 2px">
+  <a href="BMW.html">
+<img src="logos\BMWLOGO.jpg" style="width: 100px;height: 50px; padding-left: 20px;padding-right: 20px;"></a>
+</li>
+<li class="dropdown" style="text-align: center;padding-bottom: 2px">
+  <a href="Lamborghini.html">
+<img src="logos\LAMBOLOGO.png" style="width: 100px;height: 50px; padding-left: 20px;padding-right: 20px;"></a>
+</li>
+<li class="dropdown" style="text-align: center;padding-bottom: 2px">
+  <a href="Mercrdes.html">
+<img src="logos\merlog.jpg" style="width: 100px;height: 50px; padding-left: 20px;padding-right: 20px;"></a>
+</li>
+
+
+
+
+</ul>
+</div>
+</div>
+</nav>
+
+<div class="aboutus-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="aboutus">
+                        <h2 class="aboutus-title">About Us</h2>
+                        <p class="aboutus-text">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
+                        <p class="aboutus-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem</p>
+                        <a class="aboutus-more" href="#">read more</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="aboutus-banner">
+                        <img src="H:\Cars-2\Images\MAIN LOGO.png" alt=""  style="height: 400px; width: 100%">
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-6 col-xs-12">
+                    <div class="feature">
+                        <div class="feature-box">
+                            <div class="clearfix">
+                                <div class="iconset">
+                                    <span class="glyphicon glyphicon-cog icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Work with heart</h4>
+                                    <p style="text-align:justify;">Building a website is, in many ways, an exercise of willpower. It’s tempting to get distracted by the bells and whistles of the design process, and forget all about creating compelling content.It's that compelling content that's crucial to making inbound marketing work for your business.So how do you balance your remarkable content creation with your web design needs? It all starts with the</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="clearfix">
+                                <div class="iconset">
+                                    <span class="glyphicon glyphicon-cog icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Reliable services</h4>
+                                    <p style="text-align:justify;">For a remarkable about page, all you need to do is figure out your company's unique identity, and then share it with the world. Easy, right? Of course not. Your "About Us" page is one of the most important pages on your website, and it needs to be well crafted. This profile also happens to be one of the most commonly overlooked pages, which is why you should make it stand out.<br>The good news? It can be done. In fact, there are some companies out there with remarkable "About Us" pages, the elements of which you can emulate on your own website. By the end of this post, you'll know what makes some of today's best "About Us" and "About Me" pages so great, and how to make your own about page that shares your company's greatness.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="clearfix">
+                                <div class="iconset">
+                                    <span class="glyphicon glyphicon-cog icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Great support</h4>
+                                    <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Main start -->
+<div id="mainBody">
+<div class="container">
+  <hr class="soften">
+  <h1>Visit us</h1>
+  <hr class="soften"/>  
+  <div class="row">
+    <div class="ntg col-sm-3">
+    <div class="span4">
+    <h4>Contact Details</h4>
+    <p> 18 Fresno,<br/> CA 93727, USA
+      <br/><br/>
+      info@bootsshop.com<br/>
+      ﻿Tel 123-456-6780<br/>
+      Fax 123-456-5679<br/>
+      web:bootsshop.com
+    </p>    
+    </div>
+      
+    <div class="span4 ">
+    <h4>Opening Hours</h4>
+      <h5> Monday - Friday</h5>
+      <p>09:00am - 09:00pm<br/><br/></p>
+      <h5>Saturday</h5>
+      <p>09:00am - 07:00pm<br/><br/></p>
+      <h5>Sunday</h5>
+      <p>12:30pm - 06:00pm<br/><br/></p>
+    </div>
+  </div>
+  <div class="ntg col-sm-3">
+    <iframe width="100%" height="40%" src="https://www.youtube.com/embed/gdhSeBc0pME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="ntg col-sm-3">
+   <iframe width="100%" height="40%" src="https://www.youtube.com/embed/1axulKz2Vjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="ntg col-sm-3">
+    <iframe width="100%" height="40%" src="https://www.youtube.com/embed/jbHemqic2Cc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="ntg col-sm-3">
+    <iframe width="100%" height="40%" src="https://www.youtube.com/embed/WQZtVmHh8pc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="ntg col-sm-3">
+    <iframe width="100%" height="40%" src="https://www.youtube.com/embed/RhpXkwHvVIU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="ntg col-sm-3">
+    <iframe width="100%" height="40%" src="https://www.youtube.com/embed/OGYkNVgiKNk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="span4 col-sm-12">
+    <h4>Email Us</h4>
+    <form class="form-horizontal">
+        <fieldset >
+          <div class="control-group" style="padding-top: 10px">
+           
+              <input type="text" placeholder="name" class="input-xlarge"/>
+           
+          </div>
+       <div class="control-group" style="padding-top: 10px">
+           
+              <input type="text" placeholder="email" class="input-xlarge"/>
+           
+          </div>
+       <div class="control-group"style="padding-top: 10px">
+           
+              <input type="text" placeholder="subject" class="input-xlarge"/>
+          
+          </div>
+          <div class="control-group" style="padding-top: 10px; padding-bottom: 10px">
+              <textarea rows="3" id="textarea" class="input-xlarge"></textarea>
+           
+          </div>
+
+            <button class="btn btn-large" type="submit" >Send Messages</button>
+
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+  <div class="span12">
+  <iframe style="width:100%; height:300; border: 0px" scrolling="no" src="https://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=18+California,+Fresno,+CA,+United+States&amp;aq=0&amp;oq=18+California+united+state&amp;sll=39.9589,-120.955336&amp;sspn=0.007114,0.016512&amp;ie=UTF8&amp;hq=&amp;hnear=18,+Fresno,+California+93727,+United+States&amp;t=m&amp;ll=36.732762,-119.695787&amp;spn=0.017197,0.100336&amp;z=14&amp;output=embed"></iframe><br />
+  <small><a href="https://maps.google.co.uk/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=18+California,+Fresno,+CA,+United+States&amp;aq=0&amp;oq=18+California+united+state&amp;sll=39.9589,-120.955336&amp;sspn=0.007114,0.016512&amp;ie=UTF8&amp;hq=&amp;hnear=18,+Fresno,+California+93727,+United+States&amp;t=m&amp;ll=36.732762,-119.695787&amp;spn=0.017197,0.100336&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+  </div>
+  </div>
+</div>
+</div>
+
+
+
+    <section id="footer" style="width: 100%">
+   
+      <div class="row">
+       <div class="col-xs-12 col-sm-12 col-md-12" style="margin-top: inherit;">
+          <h4  style="color: white ; text-align: center;">Quick links</h4>
+          <ul class="list-unstyled quick-links"  style="text-align: center;" >
+            <li><a href="javascript:void();" style="color: yellow;"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();" style="color: yellow;"><i class="fa fa-angle-double-right"></i>About</a></li>
+            <li><a href="javascript:void();" style="color: yellow;"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+            <li><a href="javascript:void();" style="color: yellow;"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+            <li><a href="javascript:void();" style="color: yellow;"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="row" >
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center text-white">
+          <ul class="list-unstyled list-inline social text-center" style="align-items:center; color: ">
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+        </hr>
+      </div>  
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-xs-12 text-center text-white " >
+          <p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
+          <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
+        </div>
+        </hr>
+      </div>  
+    </div>
+  </section>
+    <!--Footer End-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- mi slider -->
+   <script src="H:\Cars-2\js\Multy-slider no need.js"></script>
+    <script src="H:\Cars-2\js\castslider.js"></script>
+    <script>
+        $(function () {
+
+            $('#mi-slider').catslider();
+
+        });
+    </script>
+     <!-- End script mi slider -->
+      <!-- Price filter --><script src="H:\Cars-2\js\price-range.js"></script><!-- /price filter end -->
+      <!-- multi-slider --><!-- <script src="D:\Marcado\Resources\Multy-slider.js"></script> --> <!-- /multi slider end  -->
+       <script type="text/javascript">
+        function openForm() {
+          var i=0;
+          document.getElementById("myform").style.display="block";
+          document.getElementById("myform1").style.display="none";
+          document.getElementById("carousel-1").style.display="none";
+
+
+          
+        }
+
+        function closeForm() {
+          var one=0;
+          document.getElementById("myform").style.display="none";
+          document.getElementById("myform1").style.display="none";
+          document.getElementById("carousel-1").style.display="block";
+
+        }
+
+        function openForm1() {
+          var i=0;
+          document.getElementById("myform1").style.display="block";
+          document.getElementById("myform").style.display="none";
+          document.getElementById("carousel-1").style.display="none";
+
+          
+        }
+
+        function closeForm1() {
+          var one=0;
+          document.getElementById("myform1").style.display="none";
+          document.getElementById("myform").style.display="none";
+          document.getElementById("carousel-1").style.display="block";
+
+        }
+    // function openForm3() {
+    //       var i=0;
+    //       document.getElementById("myform").style.display="block";
+    //       document.getElementById("myform3").style.display="none";
+    //       document.getElementById("carousel-1").style.display="none";
+
+
+          
+    //     }
+
+    //     function closeForm3() {
+    //       var one=0;
+    //       document.getElementById("myform").style.display="none";
+    //       document.getElementById("myform3").style.display="none";
+    //       document.getElementById("carousel-1").style.display="block";
+
+    //     }
+
+      </script>
+</body>
+</html>
